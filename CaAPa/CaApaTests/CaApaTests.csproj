@@ -3,10 +3,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{243125A0-6783-46C6-A82D-FC03BB82A447}</ProjectGuid>
+    <ProjectGuid>{BDF847BD-3C4D-458B-A33E-1966D6D13562}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CaAPa.UITests</RootNamespace>
-    <AssemblyName>CaAPa.UITests</AssemblyName>
+    <RootNamespace>CaApaTests</RootNamespace>
+    <AssemblyName>CaApaTests</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -35,20 +35,6 @@
     <Reference Include="Xamarin.UITest">
       <HintPath>..\packages\Xamarin.UITest.0.7.1\lib\Xamarin.UITest.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\iOS\CaAPa.iOS.csproj">
-      <Project>{9EE346BA-392A-42F9-9394-E9382D1A18A3}</Project>
-      <Name>CaAPa.iOS</Name>
-      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
-      <Private>False</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\Droid\CaAPa.Droid.csproj">
-      <Project>{CE04719F-0679-4309-949D-5843327815FD}</Project>
-      <Name>CaAPa.Droid</Name>
-      <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
-      <Private>False</Private>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests.cs" />
